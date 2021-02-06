@@ -6,12 +6,12 @@ class VentanaFormulario extends JFrame{
 	public VentanaFormulario(){
 		getContentPane().setLayout(null);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		setSize(700,510);
+		setSize(600,510);
 		setTitle("Formulario");
 		setLocationRelativeTo(null);
 		
-		JLabel txtTitulo = new JLabel("Formulario de registro");
-		txtTitulo.setBounds(0, 0, 300, 20);
+		JLabel txtTitulo = new JLabel("<<<Formulario de registro>>>");
+		txtTitulo.setBounds(25, 0, 300, 20);
 		add(txtTitulo);
 		
 		JLabel txt1 = new JLabel("From option");
@@ -77,9 +77,31 @@ class VentanaFormulario extends JFrame{
 		JLabel txt5 = new JLabel("Preview");
 		txt5.setBounds(260, 30, 150, 25);
 		add(txt5);
+		
 		JLabel txt6 = new JLabel("Email Address");
-		txt6.setBounds(260, 50, 150, 25);
+		txt6.setBounds(260, 60, 150, 25);
 		add(txt6);
+		JTextField txtF3 = new JTextField();
+		txtF3.setBounds(260, 80, 300, 25);
+		add(txtF3);
+		
+		JLabel txt7 = new JLabel("First Name");
+		txt7.setBounds(260, 110, 150, 25);
+		add(txt7);
+		JTextField txtF4 = new JTextField();
+		txtF4.setBounds(260, 130, 300, 25);
+		add(txtF4);
+		
+		JLabel txt8 = new JLabel("Last Name");
+		txt8.setBounds(260, 160, 150, 25);
+		add(txt8);
+		JTextField txtF5 = new JTextField();
+		txtF5.setBounds(260, 180, 300, 25);
+		add(txtF5);
+		
+		JButton btn = new JButton("Subscribe");
+		btn.setBounds(260, 220, 90, 25);
+		add(btn);
 		
 		
 		setVisible(true);
@@ -93,11 +115,7 @@ public class FormularioLayoutNulo {
 		
 		
 		try {
-			//UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
 			UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
-			//UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel");
-			//UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
-			//UIManager.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
 			System.out.println(UIManager.getInstalledLookAndFeels());
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
