@@ -81,25 +81,26 @@ class VentanaFormulario extends JFrame{
 		JLabel txt6 = new JLabel("Email Address");
 		txt6.setBounds(270, 60, 150, 25);
 		add(txt6);
-		JTextField txtF3 = new JTextField();
+		JFormattedTextField txtF3 = new JFormattedTextField();
 		txtF3.setBounds(270, 80, 300, 25);
 		add(txtF3);
 		
 		JLabel txt7 = new JLabel("First Name");
 		txt7.setBounds(270, 110, 150, 25);
 		add(txt7);
-		JTextField txtF4 = new JTextField();
+		JFormattedTextField txtF4 = new JFormattedTextField();
 		txtF4.setBounds(270, 130, 300, 25);
 		add(txtF4);
 		
 		JLabel txt8 = new JLabel("Last Name");
 		txt8.setBounds(270, 160, 150, 25);
 		add(txt8);
-		JTextField txtF5 = new JTextField();
+		JFormattedTextField txtF5 = new JFormattedTextField();
 		txtF5.setBounds(270, 180, 300, 25);
 		add(txtF5);
 		
-		JButton btn = new JButton("Subscribe");
+		Icon icon = new ImageIcon("./archivos/s1.jpg");
+		JButton btn = new JButton(icon);
 		btn.setBounds(270, 220, 90, 25);
 		add(btn);
 		
@@ -121,6 +122,7 @@ class VentanaFormulario extends JFrame{
 
         getContentPane().add(scroll);
         setLocationRelativeTo ( null );
+           
 		
 		
 		setVisible(true);
@@ -147,7 +149,10 @@ public class FormularioLayoutNulo {
 		}
 		
 		
+		
 		new VentanaFormulario();
+		
+		
 		
 		
 		
